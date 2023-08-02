@@ -3,7 +3,9 @@ import styles from "@/styles/feature.module.css";
 const SwiperFeature = () => {
   return (
     <div className={styles.feature}>
-      <h2>Swiperのメリット</h2>
+      <h2>
+        <span className={styles.swiper}>Swiper</span>のメリット
+      </h2>
       <ul>
         <li>カスタマイズ性が高い</li>
         <li>

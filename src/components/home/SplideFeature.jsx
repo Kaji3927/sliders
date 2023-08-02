@@ -3,7 +3,9 @@ import styles from "@/styles/feature.module.css";
 const SplideFeature = () => {
   return (
     <div className={styles.feature}>
-      <h2>Splideのメリット</h2>
+      <h2>
+        <span className={styles.splide}>Splide</span>のメリット
+      </h2>
       <ul>
         <li>日本人が開発しているためドキュメントが日本語</li>
         <li>

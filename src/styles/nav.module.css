@@ -1,0 +1,25 @@
+.link,
+.splide,
+.swiper {
+  text-decoration: none;
+}
+
+.link {
+  color: #fff;
+}
+
+.splide:hover {
+  color: #b4e900;
+}
+
+.swiper:hover {
+  color: #5468ff;
+}
+
+.splide.active {
+  color: #b4e900;
+}
+
+.swiper.active {
+  color: #5468ff;
+}

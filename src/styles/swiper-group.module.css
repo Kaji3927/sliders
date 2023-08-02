@@ -1,0 +1,14 @@
+.slider {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.slide {
+  position: relative;
+  height: 250px;
+}
+
+.slide img {
+  object-fit: cover;
+  object-position: center;
+}

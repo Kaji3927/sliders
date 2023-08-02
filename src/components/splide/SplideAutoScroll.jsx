@@ -1,19 +1,26 @@
 "use client";
 
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
+import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/react-splide/css";
-import styles from "@/styles/splide-normal.module.css";
+import styles from "@/styles/splide-autoscroll.module.css";
 import Image from "next/image";
 import { animals } from "../../../public/animals";
 
-const SplideNormal = () => {
+const SplideAutoScroll = () => {
   const options = {
+    focus: "center",
+    perPage: 5,
+    gap: "2rem",
     type: "loop",
-    gap: 32,
+    autoScroll: {
+      pauseOnHover: false,
+      speed: 0.6,
+    },
   };
   return (
     <div className={styles.slider}>
-      <Splide hasTrack={false} options={options}>
+      <Splide hasTrack={false} options={options} extensions={{ AutoScroll }}>
         <SplideTrack>
           {animals.map((animal) => (
             <SplideSlide key={animal.id}>
@@ -23,22 +30,10 @@ const SplideNormal = () => {
             </SplideSlide>
           ))}
         </SplideTrack>
-        <div className="splide__arrows">
-          <button
-            className={`splide__arrow splide__arrow--prev ${styles["arrow-left"]}`}
-          >
-            &larr;
-          </button>
-          <button
-            className={`splide__arrow splide__arrow--next ${styles["arrow-right"]}`}
-          >
-            &rarr;
-          </button>
-        </div>
         <ul className={`splide__pagination ${styles.normal}`} />
       </Splide>
     </div>
   );
 };
 
-export default SplideNormal;
+export default SplideAutoScroll;

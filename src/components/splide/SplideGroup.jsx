@@ -8,10 +8,9 @@ import { animals } from "../../../public/animals";
 
 const SplideGroup = () => {
   const options = {
-    rewind: true,
-    rewindSpeed: 1000,
     perPage: 3,
-    gap: "6vw",
+    gap: "2rem",
+    type: "loop",
   };
   return (
     <div className={styles.slider}>
@@ -25,7 +24,7 @@ const SplideGroup = () => {
             </SplideSlide>
           ))}
         </SplideTrack>
-        <ul className={`splide__pagination ${styles.test}`} />
+        <ul className={`splide__pagination ${styles.normal}`} />
       </Splide>
     </div>
   );

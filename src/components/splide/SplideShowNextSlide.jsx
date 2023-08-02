@@ -2,15 +2,20 @@
 
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
-import styles from "@/styles/splide-normal.module.css";
+import styles from "@/styles/splide-show-next-slide.module.css";
 import Image from "next/image";
 import { animals } from "../../../public/animals";
 
-const SplideNormal = () => {
+const SplideShowNextSlide = () => {
   const options = {
     type: "loop",
+    speed: 700,
+    padding: { right: "30%" },
     gap: 32,
+    autoplay: true,
+    interval: 3000,
   };
+
   return (
     <div className={styles.slider}>
       <Splide hasTrack={false} options={options}>
@@ -41,4 +46,4 @@ const SplideNormal = () => {
   );
 };
 
-export default SplideNormal;
+export default SplideShowNextSlide;

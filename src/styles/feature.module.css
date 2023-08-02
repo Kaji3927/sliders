@@ -2,11 +2,19 @@
   background-color: #2f2f2f;
   border-radius: 4px;
   padding: 8px 16px;
-  height: 450px;
+  height: 1000px;
 }
 
 .feature h2 {
   margin-bottom: 20px;
+}
+
+.splide {
+  color: #b4e900;
+}
+
+.swiper {
+  color: #5468ff;
 }
 
 .feature ul {

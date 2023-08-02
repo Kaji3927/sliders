@@ -6,21 +6,21 @@
   padding: 12px 40px;
 }
 
-.splide {
-  color: #b4e900;
-}
-
-.swiper {
-  color: #5468ff;
-}
-
 .header ul {
   list-style: none;
   display: flex;
   gap: 32px;
 }
 
-.header a {
-  text-decoration: none;
+.home {
   color: #fff;
+  text-decoration: none;
+}
+
+.splide {
+  color: #b4e900;
+}
+
+.swiper {
+  color: #5468ff;
 }

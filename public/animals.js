@@ -4,7 +4,7 @@ import Dog from "@assets/dog.jpg";
 import Cheetah from "@assets/cheetah.jpg";
 import Turtle from "@assets/turtle.jpg";
 import Racoon from "@assets/racoon.jpg";
-import Squirrel from "@assets/squirrel.jpg";
+import Squirrel from "@assets/squirre.jpg";
 import Deer from "@assets/deer.jpg";
 import Zebra from "@assets/zebra.jpg";
 

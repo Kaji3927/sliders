@@ -12,3 +12,11 @@ body {
 .main {
   padding: 20px 40px;
 }
+
+.pagination {
+  text-align: center;
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+}
